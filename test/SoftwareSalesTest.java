@@ -28,5 +28,15 @@ class SoftwareSalesTest {
 		double finalPrice = s.calculatePrice(12);
 		assertEquals(950.4, finalPrice, 0);
 	}
+	
+	
+	//R3
+	@Test
+	void testBuy20Packages() {
+		// Expected result = 20% discount
+		SoftwareSales s = new SoftwareSales();
+		double finalPrice = s.calculatePrice(30);
+		assertEquals(2079, finalPrice, 0);
+	}
 
 }
