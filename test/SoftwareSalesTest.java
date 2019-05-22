@@ -47,4 +47,11 @@ static SoftwareSales s;
 		assertEquals(3564, finalPrice, 0);
 	}
 
+	//R5: Buy 100+ packages, get 50% discount
+		@Test
+		public void testBuy100Packages() {
+			double finalPrice = s.calculatePrice(120);
+			assertEquals(5940, finalPrice, 0);
+		}
+	
 }
