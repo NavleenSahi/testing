@@ -15,12 +15,18 @@ class SoftwareSalesTest {
 	}
 	
 	//R1: Buy one software package
+	public void testBuyOneSoftwarePackage() {
+		
+	}
+	
+	//R2: Buy 10-19 packages, get 20%
 
 	@Test
-	void testBuyOneSoftwarePackage() {
+	void testBuy10Packages() {
+		// Expected result = 20% discount
 		SoftwareSales s = new SoftwareSales();
-		double finalPrice = s.calculatePrice(2);
-		assertEquals(198, finalPrice, 0);
+		double finalPrice = s.calculatePrice(12);
+		assertEquals(950.4, finalPrice, 0);
 	}
 
 }
