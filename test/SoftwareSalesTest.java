@@ -13,10 +13,14 @@ class SoftwareSalesTest {
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
 	}
+	
+	//R1: Buy one software package
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testBuyOneSoftwarePackage() {
+		SoftwareSales s = new SoftwareSales();
+		double finalPrice = s.calculatePrice(1);
+		assertEquals(99, finalPrice, 0);
 	}
 
 }

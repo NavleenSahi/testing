@@ -1,9 +1,9 @@
 
 public class SoftwareSales {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	public double calculatePrice(int quantity) {
+		return 0.0;
 	}
 
 }
