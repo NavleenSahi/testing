@@ -53,5 +53,19 @@ static SoftwareSales s;
 			double finalPrice = s.calculatePrice(120);
 			assertEquals(5940, finalPrice, 0);
 		}
+		
+	//R6: Quantity < -1 should return -1
+		@Test
+		public void testNegativeQuantity() {
+			double finalPrice = s.calculatePrice(-5940);
+			assertEquals(-1, finalPrice, 0);
+		}	
+		
+		//Not a requirement, but good to test
+		@Test
+		public void testZeroQuantity() {
+			double finalPrice = s.calculatePrice(0);
+			assertEquals(0, finalPrice, 0);
+		}
 	
 }
